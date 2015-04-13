@@ -1,0 +1,1 @@
+hbase(main):001:0> create 'msg_table', {NAME => 'cf1', COMPRESSION => 'SNAPPY'}, {SPLITS => ['0','1','2']}

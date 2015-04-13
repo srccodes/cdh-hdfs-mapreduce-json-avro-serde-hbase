@@ -1,0 +1,29 @@
+{
+    "type" : "record",
+    "name" : "Message",
+    "namespace" : "org.poc.avro.serde",
+    "fields" : [{"name" : "mesgid", 
+                 "type" : "string"},
+                
+                  {"name" : "Dtls", 
+                     "type" : {
+                         "type" : "record",
+                         "name" : "Dtls",
+                         "fields" : [
+                            {"name" : "sender", 
+                             "type" : "string"},
+
+                            {"name" : "timestamp", 
+                             "type" : "string"},
+
+                            {"name" : "subject", 
+                             "type" : "string"},
+
+                            {"name" : "cc", 
+                             "type" : {
+                             "type" :"array", 
+                             "items" : "string"}}
+                            ]}
+                }
+    ]
+}
